@@ -6,7 +6,7 @@ plan: init $(INIT_REQUIRED)
 	docker-compose run --rm terraform terraform plan
 .PHONY: plan
 
-apply: $(INIT_REQUIRED)
+apply: init $(INIT_REQUIRED)
 	docker-compose run --rm terraform terraform apply
 .PHONY: apply
 

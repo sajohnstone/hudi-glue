@@ -1,0 +1,1 @@
+dataFrame = spark.read.format("hudi").load("s3://${bucket_name}/lakehouse/>")
